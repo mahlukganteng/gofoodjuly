@@ -5,7 +5,7 @@ ulang:
 // function change(){
 echo color("red","                        MAZ JAVA \n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("white","                    Never Extinct         \n");
+echo color("white","                   Tak Kenal Maka Tak Benci        \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
