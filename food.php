@@ -48,8 +48,7 @@ echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("green","\n+++++++++ MAZ JAVA +++++++++);
-        echo "\n".color("white","Tak Kenal Maka Tak Sayang ");
+        echo color("green","\n+++++++++ MAZ JAVA +++++++++");
         echo "\n".color("white"," TUNGGU ");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
