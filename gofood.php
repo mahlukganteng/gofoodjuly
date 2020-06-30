@@ -58,7 +58,8 @@ echo color("white","                  Format Kode 62*** \n");
         
 	$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-RFT47YQ}');
         $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
+        if(strpos($code1, 'Promo kamu 
+	bisa dipakai')){
         echo "\n".color("green","Message: ".$message);
         goto gocar;
         }else{
