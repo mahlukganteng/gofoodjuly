@@ -4,9 +4,10 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","                           Maz Java\n");
-echo color("green","                 Tak Kenal Maka Tak Sayang\n");
+echo color("red","                    BAKUL RECEH\n");
+echo color("green","                 BELANTIK CILIK\n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
+echo color("green","                    BY CINTAKU     \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("purple"," NOMOR  : ");
@@ -48,8 +49,9 @@ echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("green","\n+++++++++ MAZ JAVA +++++++++");
-        echo "\n".color("white"," TUNGGU ");
+        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬ OJOK NYOLONG COK▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo "\n".color("white","Crott auwww..");
+        echo "\n".color("white"," TUNGGU COK");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(5);
@@ -174,7 +176,7 @@ $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_co
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN KAMU = 112233 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN MU = 112233 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
@@ -184,20 +186,20 @@ $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_co
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
-         echo color("white","-] SALAH!!!\n");
+         echo color("white","-] KELIRU!!!\n");
          }
          }
          }
          }else{
          echo color("white","-] OTP KELIRU");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] Masukin ..\n");
+         echo color("white","!] MASUKNO COK..\n");
          goto otp;
          }
          }else{
-         echo color("white","-] Nomor Salah");
+         echo color("white","-] NOMOR KELIRU");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] Masukin Lagi\n");
+         echo color("white","!] MASUKNO MANEH\n");
          goto ulang;
          }
 //  }
