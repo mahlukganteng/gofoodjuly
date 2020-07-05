@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Asia/Jakarta');
+date_default_timezone_set('Asia/Bandung');
 include "function.php";
 ulang:
 // function change(){
@@ -32,7 +32,7 @@ echo color("white","                  Format Kode 62*** \n");
             $hp = '1'.substr(trim($nohp),0,13);
         }
     }
-        $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
+        $data = '{"email":"'.$email.'@mahlukganteng.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
@@ -56,7 +56,7 @@ echo color("white","                  Format Kode 62*** \n");
         sleep(5);
         }
         
-	$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-RFT47YQ}');
+	$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu 
 	bisa dipakai')){
