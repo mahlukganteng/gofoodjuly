@@ -47,7 +47,7 @@ echo color("red","                 Gunakan Format 62\n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬ Sedang Mendownlowd Voucher ▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬ Sedang Mendownload Voucher ▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","Voucher A..");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
